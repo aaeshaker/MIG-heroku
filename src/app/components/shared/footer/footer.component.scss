@@ -1,0 +1,197 @@
+@import '../../../../variables';
+
+footer {
+  background-color: #313131;
+
+  a,
+  h5 {
+    cursor: pointer;
+  }
+
+  .logo {
+    svg {
+      .a {
+        fill: $mainColor;
+      }
+    }
+  }
+
+  h4 {
+    color: $mainColor;
+    text-transform: capitalize;
+    padding-bottom: 1vw;
+  }
+
+  .follow-us {
+
+    h4 {
+      padding-top: 3vw;
+      font-weight: 600;
+    }
+
+    ul {
+      li {
+        padding-right: 1.5vw;
+      }
+    }
+
+  }
+
+  h5 {
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-bottom: 1vw;
+  }
+
+  .call-us {
+
+    h5,
+    h4 {
+      padding: 0;
+    }
+
+    li {
+      @include vlCenter;
+      margin-bottom: 1vw;
+
+      span {
+        padding-right: 1vw;
+      }
+    }
+  }
+}
+
+
+//  Responsive
+
+@media only screen and (max-width: 1024px) {
+
+  footer {
+
+    .padding-y {
+      padding-top: 5.610966vw;
+      padding-bottom: 4.610966vw;
+    }
+
+    h4 {
+      padding-bottom: 2vw;
+    }
+
+    .follow-us {
+
+      svg {
+        width: 3.5vw;
+      }
+
+      h4 {
+        padding-top: 4vw;
+      }
+
+      ul {
+        li {
+          padding-right: 3vw;
+        }
+      }
+
+    }
+
+    h5 {
+      padding-bottom: 3vw;
+    }
+
+    .call-us {
+
+      li {
+        margin-bottom: 4vw;
+
+        span {
+          padding-right: 4vw;
+
+          svg {
+            width: 4vw;
+          }
+        }
+      }
+    }
+
+    .col-md-5 {
+      margin-bottom: 4vw;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  footer {
+
+    .padding-y {
+      padding-top: 14.610966vw;
+      padding-bottom: 0;
+    }
+
+    .logo {
+      svg {
+        width: 40vw;
+      }
+    }
+
+    h4 {
+      padding-bottom: 3vw;
+    }
+
+    .follow-us {
+
+      svg {
+        width: 5vw;
+      }
+
+      h4 {
+        padding-top: 9vw;
+      }
+
+      ul {
+        li {
+          padding-right: 5vw;
+        }
+      }
+
+    }
+
+    h5 {
+      padding-bottom: 4vw;
+    }
+
+    .quick-links,
+    .follow-us,
+    .what-we-do,
+    .call-us {
+      @include flexCenter;
+      flex-direction: column;
+    }
+
+    .call-us {
+
+      li {
+        margin-bottom: 5vw;
+
+        span {
+          padding-right: 5vw;
+
+          svg {
+            width: 5.5vw;
+          }
+        }
+      }
+    }
+
+    .col-md-5 {
+      margin-bottom: 10vw;
+      @include flexCenter;
+      flex-direction: column;
+    }
+  }
+
+}

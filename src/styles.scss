@@ -1,0 +1,291 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+/*----- Font Family -----*/
+body,
+html,
+a,
+.icon-text-wrapper .select-text,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+select,
+option,
+input,
+input::placeholder,
+a,
+span,
+button,
+.invalid-feedback,
+.form-control,
+select,
+option,
+.form-select,
+.uk-notification-message .my-primary-btn {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  /* you can access now 4 font weights:
+  Light 300, Regular 400, Semi-Bold 600 & Bold 700 */
+}
+
+/*----- Font Sizes -----*/
+h1 {
+  font-size: 2.864583333333333vw; // 55px
+}
+
+h2 {
+  font-size: 2.5520833333333335vw; // 49px
+  color: $mainColor;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.9791666666666665vw; // 38px
+}
+
+h4 {
+  font-size: 1.5625vw; // 30px
+}
+
+h5 {
+  font-size: 1.3541666666666667vw; // 26px
+}
+
+h6 {
+  font-size: 1vw;
+}
+
+//  Html Tags
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+// Global Classes
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid {
+  padding-right: 5.729vw;
+  padding-left: 5.729vw;
+}
+
+.padding-y {
+  padding-top: 3.610966057441253vw;
+  padding-bottom: 3.610966057441253vw;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.img-container,
+.swiper-slide {
+  @include bgCenter;
+  width: 100%;
+}
+
+// Image Overlay
+.overlay {
+  background-color: rgba($color: $black, $alpha: .33);
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.primary-link {
+  color: $mainColor;
+  font-size: 1.3541666666666667vw;
+  font-weight: 400;
+
+  svg {
+    width: 1.5vw;
+    margin: 0 .5vw;
+  }
+
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+.my-primary-btn {
+  color: $white;
+  background-color: $mainColor;
+  padding: .8vw 3vw;
+  font-size: 1.5vw;
+  border: none;
+  transition: all .3s;
+  font-weight: 400;
+
+  &:hover {
+    color: $mainColor;
+    background-color: #313131;
+  }
+}
+
+/*---- Scroll bar "start"----*/
+::-webkit-scrollbar {
+  width: 0.3703703703703704vw; // 5px
+}
+
+::-webkit-scrollbar-thumb {
+  background: $mainColor;
+}
+
+::-webkit-scrollbar-track {
+  background: $white;
+}
+
+/*--x-- Scroll bar "end"--x--*/
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 7px;
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  background: $white;
+  opacity: .6;
+}
+
+.media-hub {
+  .swiper-pagination-bullet {
+    background: #9F9F9F;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $mainColor !important;
+}
+
+//  Responsive
+
+@media only screen and (max-width: 1024px) {
+
+  h2 {
+    font-size: 6.5vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  h4 {
+    font-size: 4.3vw;
+  }
+
+  h5 {
+    font-size: 3.5vw;
+  }
+
+  h6 {
+    font-size: 2.5vw;
+  }
+
+  .uk-close {
+    svg {
+      width: 3vw;
+    }
+  }
+
+  .primary-link {
+    font-size: 4vw;
+
+    svg {
+      width: 5vw;
+      margin: 0 1.2vw;
+    }
+  }
+
+  .my-primary-btn {
+    padding: 1.5vw 5vw;
+    font-size: 3.5vw;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  h2 {
+    font-size: 7.5vw;
+  }
+
+  h3 {
+    font-size: 6.5vw;
+  }
+
+  h4 {
+    font-size: 5.5vw;
+  }
+
+  h5 {
+    font-size: 4.8vw;
+  }
+
+  h6 {
+    font-size: 3.5vw;
+  }
+
+  .uk-close {
+    svg {
+      width: 4vw;
+    }
+  }
+
+  .primary-link {
+    font-size: 5vw;
+
+    svg {
+      width: 6vw;
+      margin: 0 1.5vw;
+    }
+  }
+
+  .my-primary-btn {
+    padding: 2.5vw 6vw;
+    font-size: 4.5vw;
+  }
+
+}

@@ -1,0 +1,183 @@
+@import '../../../../variables';
+
+
+.Nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 6.588579795021962vw;
+  transition: all 0.2s ease-in-out;
+
+  .logo {
+
+    svg {
+      width: 8vw;
+
+      .a {
+        fill: $mainColor;
+      }
+    }
+
+  }
+
+  .menu {
+
+    h5 {
+      font-weight: 400;
+      line-height: 1;
+      color: $white;
+      padding: .2vw 0;
+      border-top: 2px solid $mainColor;
+      border-bottom: 2px solid $mainColor;
+    }
+
+  }
+
+}
+
+.scrolled {
+  background-color: #313131;
+
+  .menu {
+
+    h5 {
+      color: $mainColor;
+    }
+
+  }
+}
+
+.nav-shadow {
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 16%);
+}
+
+#offcanvas-flip {
+
+  ul {
+    padding-top: 5vw;
+
+    li {
+
+      padding-bottom: 1vw;
+
+      a {
+        text-transform: capitalize;
+        color: $mainColor;
+        font-size: 1.3541666666666667vw;
+      }
+    }
+  }
+
+  .hl-line {
+    height: .15vw;
+    width: 65%;
+    background-color: $mainColor;
+    margin: .5vw 0;
+  }
+}
+
+.uk-offcanvas-bar {
+  width: 15.373352855051245vw;
+  padding: 20px 20px;
+  background: #313131;
+}
+
+
+.uk-card-primary.uk-card-body .uk-close,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-close,
+.uk-card-secondary.uk-card-body .uk-close,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-close,
+.uk-light .uk-close,
+.uk-offcanvas-bar .uk-close,
+.uk-overlay-primary .uk-close,
+.uk-section-primary:not(.uk-preserve-color) .uk-close,
+.uk-section-secondary:not(.uk-preserve-color) .uk-close,
+.uk-tile-primary:not(.uk-preserve-color) .uk-close,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-close {
+  color: $mainColor;
+}
+
+//  Responsive
+
+@media only screen and (max-width: 1024px) {
+
+  .Nav {
+
+    height: 12vw;
+
+    .logo {
+
+      svg {
+        width: 12vw;
+      }
+
+    }
+
+  }
+
+  #offcanvas-flip {
+
+    ul {
+      padding-top: 9vw;
+
+      li {
+
+        padding-bottom: 2vw;
+
+        a {
+          font-size: 3.5vw;
+        }
+      }
+    }
+
+    .hl-line {
+      height: 0.4vw;
+      width: 70%;
+      margin: 1vw 0;
+    }
+  }
+
+  .uk-offcanvas-bar {
+    width: 33.85416666666667vw;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .Nav {
+
+    height: 20vw;
+
+    .logo {
+
+      svg {
+        width: 18vw;
+      }
+
+    }
+
+  }
+
+  #offcanvas-flip {
+
+    ul {
+      padding-top: 15vw;
+
+      li {
+
+        padding-bottom: 3vw;
+
+        a {
+          font-size: 4.5vw;
+        }
+      }
+    }
+  }
+
+  .uk-offcanvas-bar {
+    width: 50%;
+  }
+
+}
